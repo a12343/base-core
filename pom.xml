@@ -10,12 +10,14 @@
     </parent>
     <groupId>com.seerbigdata</groupId>
     <artifactId>seer-core</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>seer-core</name>
     <description>seer-core</description>
 
     <properties>
         <java.version>1.8</java.version>
+        <guava.version>27.1-jre</guava.version>
+        <commons-lang3.version>3.7</commons-lang3.version>
     </properties>
 
     <dependencies>
@@ -33,6 +35,18 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- 好用的组件库 -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
         </dependency>
     </dependencies>
 
