@@ -11,6 +11,7 @@
     <groupId>com.seerbigdata</groupId>
     <artifactId>seer-core</artifactId>
     <version>0.0.1</version>
+
     <name>seer-core</name>
     <description>seer-core</description>
 
@@ -29,7 +30,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>false</optional>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

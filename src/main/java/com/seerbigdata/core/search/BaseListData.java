@@ -1,4 +1,4 @@
-package com.seerbigdata.seercore.search;
+package com.seerbigdata.core.search;
 
 import java.io.Serializable;
 
@@ -127,8 +127,20 @@ public abstract class BaseListData implements Serializable {
     /**
      * 获取数据.
      *
-     * @return the boolean
+     * @return the object
      * @author : yangjunqing / 2019-04-13
      */
-    public abstract Boolean getData();
+    public Object getData(){
+        return this.data;
+    }
+
+    /**
+     * 设置数据.
+     *
+     * @param data the data
+     * @author : yangjunqing / 2019-04-15
+     */
+    public void setData(Object data){
+        this.data = data;
+    }
 }

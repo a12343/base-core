@@ -1,6 +1,6 @@
-package com.seerbigdata.seercore.utils;
+package com.seerbigdata.core.utils;
 
-import com.seerbigdata.seercore.entity.GlobalException;
+import com.seerbigdata.core.entity.GlobalException;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;

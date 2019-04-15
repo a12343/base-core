@@ -1,4 +1,4 @@
-package com.seerbigdata.seercore.search;
+package com.seerbigdata.core.search;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

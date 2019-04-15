@@ -1,4 +1,4 @@
-package com.seerbigdata.seercore.constant;
+package com.seerbigdata.core.constant;
 
 import org.springframework.lang.Nullable;
 

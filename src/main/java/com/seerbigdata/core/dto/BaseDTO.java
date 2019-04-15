@@ -1,4 +1,4 @@
-package com.seerbigdata.seercore.dto;
+package com.seerbigdata.core.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -45,9 +45,4 @@ public class BaseDTO implements Serializable {
      * 最后一次更新时间
      */
     private LocalDateTime updateDate;
-
-    /**
-     * 删除标志
-     */
-    private Integer delete;
 }

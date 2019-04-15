@@ -1,4 +1,4 @@
-package com.seerbigdata.seercore.parm;
+package com.seerbigdata.core.parm;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.seerbigdata.seercore.utils;
+package com.seerbigdata.core.utils;
 
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;

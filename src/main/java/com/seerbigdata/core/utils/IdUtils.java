@@ -1,4 +1,4 @@
-package com.seerbigdata.seercore.utils;
+package com.seerbigdata.core.utils;
 
 
 import org.apache.commons.lang3.StringUtils;

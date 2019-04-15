@@ -1,4 +1,6 @@
-package com.seerbigdata.seercore.search;
+package com.seerbigdata.core.search;
+
+import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Set;
@@ -9,11 +11,18 @@ import java.util.Set;
  * @author : yangjunqing / yangjunqing@seerbigdata.com
  * @version : 1.0
  */
+@Data
 public abstract class BaseSearchCriteria implements Serializable {
     /**
      * serialVersionUID
      */
     private static final long serialVersionUID = 6686103841929106216L;
+
+
+    /**
+     * 默认开启分页
+     */
+    private final static Boolean DEFAULT_PAGING = true;
 
     /**
      * 默认页数
@@ -26,25 +35,19 @@ public abstract class BaseSearchCriteria implements Serializable {
     private final static long DEFAULT_SIZE = 10;
 
     /**
-     * 最大显示数量
+     * 是否开启分页
      */
-    private final static long MAX_SIZE = 100;
-
-    /**
-     * 范围分隔符
-     */
-    private final static String IN_SPLIT = ",";
-
+    private Boolean paging = DEFAULT_PAGING;
 
     /**
      * 页数
      */
-    private long page;
+    private long page = DEFAULT_PAGE;
 
     /**
      * 页码显示数量
      */
-    private long size;
+    private long size = DEFAULT_SIZE;
 
     /**
      * 排序字段

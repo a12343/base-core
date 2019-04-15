@@ -1,6 +1,6 @@
-package com.seerbigdata.seercore.entity;
+package com.seerbigdata.core.entity;
 
-import com.seerbigdata.seercore.constant.HttpStatus;
+import com.seerbigdata.core.constant.HttpStatus;
 import lombok.Getter;
 
 import java.io.Serializable;

@@ -1,4 +1,4 @@
-package com.seerbigdata.seercore.entity;
+package com.seerbigdata.core.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -50,5 +50,5 @@ public class BaseEntity implements Serializable {
     /**
      * 删除标志
      */
-    private Integer delete;
+    private Integer deleteTag;
 }

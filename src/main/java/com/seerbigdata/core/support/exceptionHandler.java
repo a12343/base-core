@@ -1,7 +1,7 @@
-package com.seerbigdata.seercore.support;
+package com.seerbigdata.core.support;
 
-import com.seerbigdata.seercore.entity.GlobalException;
-import com.seerbigdata.seercore.entity.ResponseData;
+import com.seerbigdata.core.entity.GlobalException;
+import com.seerbigdata.core.entity.ResponseData;
 
 /**
  * 异常处理
