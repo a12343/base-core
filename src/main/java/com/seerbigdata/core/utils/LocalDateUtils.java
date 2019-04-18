@@ -190,6 +190,35 @@ public class LocalDateUtils {
     }
 
     /**
+     * 获取时间戳.
+     *
+     * @param time the time
+     * @return the long
+     * @author : yangjunqing / 2019-04-16
+     */
+    public static Instant getInstant(String time){
+        if (time.matches(MINUTE_DATE_FORMAT_REGEX)){
+            LocalDateTime localDateTime = LocalDateTime.parse(time, DateTimeFormatter.ofPattern(MINUTE_DATE_FORMAT));
+            return localDateTime.atZone(DEFAULT_ZONE).toInstant();
+        }
+        else if (time.matches(SECOND_DATE_FORMAT_REGEX)){
+            LocalDateTime localDateTime = LocalDateTime.parse(time, DateTimeFormatter.ofPattern(SECOND_DATE_FORMAT));
+            return localDateTime.atZone(DEFAULT_ZONE).toInstant();
+        }
+        else if (time.matches(MONTH_DATE_FORMAT_REGEX)){
+            LocalDate localDate = LocalDate.parse(time, DateTimeFormatter.ofPattern(MONTH_DATE_FORMAT));
+            return localDate.atStartOfDay().atZone(DEFAULT_ZONE).toInstant();
+        }
+        else if (time.matches(DAY_DATE_FORMAT_REGEX)){
+            LocalDate localDate = LocalDate.parse(time, DateTimeFormatter.ofPattern(DAY_DATE_FORMAT));
+            return localDate.atStartOfDay().atZone(DEFAULT_ZONE).toInstant();
+        }
+        else {
+            throw new GlobalException("时间格式不正确：" + time);
+        }
+    }
+
+    /**
      * 通过时间字符串获取mysql时间格式.
      *
      * @param time the time

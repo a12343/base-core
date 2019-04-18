@@ -23,6 +23,16 @@ public interface PARMConvert<T, P> {
     T parmToEntity(P d, Class<T> clazz);
 
     /**
+     * 实体转parm.
+     *
+     * @param t     the t
+     * @param clazz the clazz
+     * @return the p
+     * @author : yangjunqing / 2019-04-17
+     */
+    P entityToPARM(T t, Class<P> clazz);
+
+    /**
      * PARM转实体.
      *
      * @param pList the p list
@@ -31,4 +41,14 @@ public interface PARMConvert<T, P> {
      * @author : yangjunqing / 2019-04-13
      */
     List<T> parmToEntity(List<P> pList, Class<T> clazz);
+
+    /**
+     * 实体转parm.
+     *
+     * @param tList the t list
+     * @param clazz the clazz
+     * @return the list
+     * @author : yangjunqing / 2019-04-17
+     */
+    List<P> entityToPARM(List<T> tList, Class<P> clazz);
 }

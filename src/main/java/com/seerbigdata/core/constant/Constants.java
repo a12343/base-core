@@ -21,10 +21,10 @@ public class Constants {
     /**
      * 已删除标记
      */
-    public static final String DELETED_TAG = "1";
+    public static final Integer DELETED_TAG = 1;
 
     /**
      * 未删除标记
      */
-    public static final String UNDELETE_TAG = "0";
+    public static final Integer UNDELETE_TAG = 0;
 }
